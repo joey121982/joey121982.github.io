@@ -7,7 +7,7 @@
     flex-flow: column wrap;
     align-items: left;
     justify-content: left;
-    margin: 5vw 10vw;
+    margin: 3vw 10vw;
 }
 
 .PageBody {
@@ -37,6 +37,18 @@
     font-size: 5vw;
     position: absolute;
     bottom: 4vh;
+}
+
+.SiteList {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw 2vw;
+}
+
+.Site {
+    padding: 1vw
 }
 
 @media (max-width: 600px) {

@@ -9,7 +9,7 @@ const Content = () => {
     });
 
     return (
-        <div>
+        <div className="SiteList">
             {sites}
         </div>
     )

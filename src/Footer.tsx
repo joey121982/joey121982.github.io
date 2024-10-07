@@ -11,13 +11,16 @@ const Footer = () => {
         return () => clearInterval(intervalId); // Cleanup the interval on component unmount
     }, []);
 
+    const weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
     let hours = time.getHours();
     let minutes = time.getMinutes();
     let seconds = time.getSeconds();
+    let day = weekDays[time.getDay()];
 
     return (
         <div className="PageFooter">
-            {hours < 10 ? `0${hours}` : hours}:{minutes < 10 ? `0${minutes}` : minutes}:{seconds < 10 ? `0${seconds}` : seconds}
+            {hours < 10 ? `0${hours}` : hours}:{minutes < 10 ? `0${minutes}` : minutes}:{seconds < 10 ? `0${seconds}` : seconds} <font color={"#5C8374"}>{day}</font>
         </div>
     );
 };
