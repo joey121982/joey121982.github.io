@@ -1,0 +1,54 @@
+* {
+    background-color: #191A19;
+}
+
+.Page {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: left;
+    justify-content: left;
+    margin: 5vw 10vw;
+}
+
+.PageBody {
+    color: #93B1A6;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2vw;
+}
+
+.PageTitle {
+    color: #5C8374;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 4vw;
+}
+
+.PageFooter {
+    color: #93B1A6;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 5vw;
+    position: absolute;
+    bottom: 4vh;
+}
+
+@media (max-width: 600px) {
+    .PageBody {
+        font-size: 2vw;
+    }
+
+    .PageTitle {
+        font-size: 5vw;
+    }
+
+    .PageFooter {
+        font-size: 6vw;
+    }
+}
