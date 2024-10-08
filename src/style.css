@@ -51,6 +51,14 @@
     padding: 1vw
 }
 
+.SearchBar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+	color: hsl(215, 100%, 50%);
+}
+
 @media (max-width: 600px) {
     .PageBody {
         font-size: 2vw;
